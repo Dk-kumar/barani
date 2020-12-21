@@ -3,7 +3,7 @@
         <form>
             <h1>Tap to Here to Check the Customer Name</h1>
           <div class="form-box">
-            <input type="text" class="search-field" placeholder="Search Here" formControlName="Customer_name"  id="customer_name" name="customer_name">
+            <input type="text" class="search-field" placeholder="Search Here" name="customer_name">
             <button class="search-btn" type="button">Search</button>
             <button class="view-btn" type="button">View</button>
             <button class="edit-btn" type="button">Edit</button>
@@ -11,4 +11,12 @@
         </form>
 </div>
 <button class="btn btn1" (click)='addCustomer()'>Add new customer</button>
+<div>
+  <table class="table table-sm-table-hover">
+    <tr *ngFor = 'let data of newOrderDetails'>
+      <td>Customer_name : {{data.Customer_name}}</td>
+    </tr>
+  </table>
+  
+</div>
 <router-outlet></router-outlet>

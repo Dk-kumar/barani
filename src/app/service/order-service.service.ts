@@ -15,7 +15,6 @@ export class OrderServiceService {
   
   
   Get_Customer_Detail():Observable<any>{
-    debugger
     return this.http.get(this.base_url + "Customer_Detail/",{headers:this.httpHeaders} )
   }
 

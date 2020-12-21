@@ -26,12 +26,12 @@ export class NewOrderComponent implements OnInit {
     Nick_name : [],
     Address : [],
     GST_no : [],
-    CIN_no : [],
+    CIN_no : ['123esd4',],
     Contact_1 : [],
     Contact_2: [],
     Contact_3 : [],
-    Contact_4 : [],
-    product_id : [],
+    Contact_4 : ['1234567890',],
+    /*product_id : [],
     Product_name : [],
     Casting : [],
     vendor_name : [],
@@ -41,7 +41,7 @@ export class NewOrderComponent implements OnInit {
     Transport : [],
     payment : [],
     export : [],
-    Quantity : []
+    Quantity : []*/
     })
     
     this.orderService.Get_Customer_Detail()
@@ -52,16 +52,16 @@ export class NewOrderComponent implements OnInit {
   }
 
   submit(){
-    let value = this.orderDetailsForm.value;
-    let obj = {}
-    obj['c_id'] = value['Customer_id']
-    console.log(obj)
-    for (var key in value) {
-    if (value.hasOwnProperty(key)) {
-        console.log(key + " -> " + value[key]);
-    }
-    
-  }
+    const value = this.orderDetailsForm.value;
+    this.orderService.Post_Customer_Detail(value)
+    .subscribe(data => {
+      console.log(data)
+    },
+    error => {
+      console.log(error)
+    })
+    console.log(this.data)
+    console.log(value)
 
 }
 

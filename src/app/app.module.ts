@@ -19,7 +19,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NewOrderComponent } from './marketing/new-order/new-order.component';
 import { ExistingOrderComponent } from './marketing/existing-order/existing-order.component';
 import { EngineeringComponent } from './engineering/engineering.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { OrderListComponent } from './marketing/order-list/order-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { OrderServiceService } from './service/order-service.service';
@@ -47,6 +47,7 @@ import { OrderServiceService } from './service/order-service.service';
     BrowserAnimationsModule,
     MatDialogModule,
     ReactiveFormsModule,
+    FormsModule,
     HttpClientModule
     
   ],
