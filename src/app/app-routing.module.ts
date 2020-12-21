@@ -7,17 +7,39 @@ import { PlanningComponent } from './planning/planning.component';
 import { ProductionComponent } from './production/production.component';
 import { PurchaseComponent } from './purchase/purchase.component';
 import { StockComponent } from './stock/stock.component';
+import { NewOrderComponent } from './marketing/new-order/new-order.component';
+import { ExistingOrderComponent } from './marketing/existing-order/existing-order.component';
+import { OrderListComponent } from './marketing/order-list/order-list.component';
 
 const routes: Routes = [
- 
- 
+  
+  {
+    path:'',
+    redirectTo: '/home',
+    pathMatch: 'full'
+  },
   {
     path:'home',
     component:HomeComponent
   },
   {
     path:'Marketing',
-    component:MarketingComponent
+    component:MarketingComponent,
+    children: [
+    
+    ]
+  },
+  {
+    path:'Marketing/New-order',
+    component:NewOrderComponent
+  },
+  {
+    path:'Marketing/Existing-order',
+    component:ExistingOrderComponent
+  },
+  {
+    path:'Marketing/order-list',
+    component:OrderListComponent
   },
   {
     path:'Planning',

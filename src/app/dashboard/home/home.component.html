@@ -25,20 +25,28 @@
     </div>
   </nav>-->
   <!--/.Navbar blue-->
-    <section class="services-section spad " style="margin-left: 0%;">
-      <div class="container">
+    <section class="services-section spad " style="margin-left: 0%;" >
+      <div class="container" *ngIf='ishome'>
           <div class="row">
               <div class="col-lg-3 col-md-4 col-sm-6" *ngFor = "let item of title" >
-                  <div (click)='isSelect()' class="services__item" routerLink="/{{item.title}}" style="outline: none; height: 200px;" (click) = "action(item.title)">
-                      <img src="assets/{{item.imgUrl}}"
+                  <div class="services__item" routerLink="/{{item.title}}" style="outline: none; height: 200px;" (click) = "action(item.title)"> 
+                    <img src="assets/{{item.imgUrl}}"
                       [title]='item.title' style="width: 50%;">
                       <h4 style="text-align: center; padding-top: 10px; " >{{item.title}}</h4>
+                      <!--div><h5>LastUpdated:today</h5></div-->
+                      <h6>Authorized</h6>
                   </div>
               </div>
               
           </div>
       </div>
+      <!--div>
+        <app-marketing *ngIf='isMarketing'></app-marketing>
+        <app-planning *ngIf='isPlanning'></app-planning>
+        <app-production *ngIf='isProduction'></app-production>
+        <app-purchase *ngIf='isPurchase'></app-purchase>
+        <app-stock *ngIf='isStock'></app-stock>
+      </div-->
     </section>
-    <router-outlet></router-outlet>
 
 <!-- Services Section End -->

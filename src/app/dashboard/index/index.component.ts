@@ -10,14 +10,7 @@ export class IndexComponent implements OnInit {
   title:string;
   imgUrl;
 
-  isPlanning:boolean=false
-  isPurchase:boolean=false
-  isStock:boolean=false
-  isMarketing:boolean=false
-  isProduction:boolean=false
-  isQuality:boolean=false
-  isEngineering:boolean=false
-  ishome:boolean=true
+  
 
   value = [
    {'title':"Planning" , "imgUrl":"plan.jpg" ,'status':'false'},
@@ -35,15 +28,11 @@ export class IndexComponent implements OnInit {
         this.title = res.title
         this.imgUrl = res.imgUrl
       }
-    })   
+    })  
+    
    }
   
-  isSelect(){
-    if(this.title ){
-      this.isMarketing = true;
-      this.ishome = false
-    }
-  }
+  
     
   ngOnInit(): void {
     

@@ -8,6 +8,15 @@ import {APIService} from 'src/app/api.service';
 export class HomeComponent implements OnInit {
 
   titleValue:string = ''
+
+  isPlanning:boolean=false
+  isPurchase:boolean=false
+  isStock:boolean=false
+  isMarketing:boolean=false
+  isProduction:boolean=false
+  isQuality:boolean=false
+  isEngineering:boolean=false
+  ishome:boolean=true
   
   title = [
     {'title':"Planning" , "imgUrl":"plan.jpg" },
@@ -29,7 +38,11 @@ export class HomeComponent implements OnInit {
   }
   action(val){
     this.HttpService.value = val;
+      this.ishome = false
   }
+
+  
+  
 
   
 

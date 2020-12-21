@@ -1,0 +1,14 @@
+ <!--Search Box-->
+<div class="container">
+        <form>
+            <h1>Tap to Here to Check the Customer Name</h1>
+          <div class="form-box">
+            <input type="text" class="search-field" placeholder="Search Here" formControlName="Customer_name"  id="customer_name" name="customer_name">
+            <button class="search-btn" type="button">Search</button>
+            <button class="view-btn" type="button">View</button>
+            <button class="edit-btn" type="button">Edit</button>
+          </div>
+        </form>
+</div>
+<button class="btn btn1" (click)='addCustomer()'>Add new customer</button>
+<router-outlet></router-outlet>
