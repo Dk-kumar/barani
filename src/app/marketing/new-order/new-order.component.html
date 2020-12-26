@@ -1,0 +1,249 @@
+<div class="container">
+    <div class="row">
+        <div class="page-content">
+            <div class="wizard-v5-content">
+                <div class="wizard-form">
+                    <form class="form-register" [formGroup]="orderDetailsForm">
+                        <div id="form-total">
+
+
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                <br>
+                                <ul class="nav nav-tabs">
+                                    <li class="nav-item">
+                                        <a href="#home" class="nav-link active" role="tab" data-toggle="tab">Personal
+                                            information</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="#profile" class="nav-link" role="tab" data-toggle="tab">Product
+                                            Details</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="#about" class="nav-link" role="tab" data-toggle="tab">Confirmation</a>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane fade in active" id="home">
+                                        <!-- SECTION 1 -->
+                                        <br>
+                                        <!--h2>
+			            	<span class="step-icon"><i class="zmdi zmdi-check"></i></span>
+			            	<span class="step-text">Personal Information</span>
+			            </h2-->
+                                        <section>
+                                            <div class="inner">
+                                                <div class="form-row">
+                                                    <div class="form-holder">
+                                                        <label for="Customer_ID">Customer ID</label>
+                                                        <input type="text" placeholder="" class="form-control"
+                                                        formControlName="Customer_id" id="Customer_ID" name="first_name">
+                                                    </div>
+                                                    <div class="form-holder">
+                                                        <label for="email">E-mail</label>
+                                                        <input type="email" placeholder="" class="email input-step-2-1"
+                                                        formControlName="Email_id" id="email" name="email">
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-holder">
+                                                        <label for="first_name">Customer Name</label>
+                                                        <input type="text" placeholder="" class="form-control"
+                                                        formControlName="Customer_name"  id="customer_name" name="customer_name">
+                                                    </div>
+                                                    <div class="form-holder">
+                                                        <label for="last_name">Nick Name</label>
+                                                        <input type="text" placeholder="" class="form-control"
+                                                        formControlName="Nick_name"  id="nick_name" name="nick_name">
+                                                    </div>
+                                                </div>
+                                                <!--div class="form-row">
+									<div id="radio">
+										<label for="gender">Gender: </label>
+										<input type="radio" name="gender" value="male" checked> Male
+  										<input type="radio" name="gender" value="female"> Female
+									</div>
+								</div-->
+                                                <div class="form-row">
+                                                    <div class="form-holder form-holder-2">
+                                                        <label for="address">Address Location</label>
+                                                        <input type="text" placeholder="" class="form-control"
+                                                        formControlName="Address"  id="address" name="address">
+                                                        <span><i class="zmdi zmdi-pin"></i></span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-holder form-holder-3">
+                                                        <label for="Gst">GST/CIN</label>
+                                                        <input type="text" placeholder="" class="form-control" id="gst"
+                                                        formControlName="GST_no"   name="gst">
+                                                    </div>
+                                                    <div class="form-holder">
+                                                        <label for="code">Phone Number 1</label>
+                                                        <input type="text" placeholder="" class="form-control"
+                                                        formControlName="Contact_1" id="phone_number_one" name="phone_number_one">
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-holder form-holder-3">
+                                                        <label for="phone">Phone Number 2</label>
+                                                        <input type="text" placeholder="" class="form-control"
+                                                        formControlName="Contact_2"  id="phone" name="phone_number_two">
+                                                    </div>
+                                                    <div class="form-holder">
+                                                        <label for="code">Contact Number 3</label>
+                                                        <input type="text" placeholder="" class="form-control"
+                                                        formControlName="Contact_3"  id="phone" name="phone_number_three">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </section>
+                                    </div>
+                                    <!--div role="tabpanel" class="tab-pane fade" id="profile"-->
+                                        <!-- SECTION 2 -->
+                                        <br>
+                                        <!--h2>
+			            	<span class="step-icon"><i class="zmdi zmdi-check"></i></span>
+			            	<span class="step-text">Bank Information</span>
+			            </h2-->
+                                        <!--section>
+                                            <div class="inner">
+                                                <div class="form-row">
+                                                    <div class="form-holder">
+                                                        <label for="productid">Product ID</label>
+                                                        <input type="text" placeholder=""
+                                                            class="form-control input-step-2" id="productid"
+                                                            formControlName="product_id" name="product_id">
+                                                        <span><i class="zmdi zmdi-search"></i></span>
+                                                    </div>
+                                                    <div class="form-holder">
+                                                        <label for="branch">Product Name:</label>
+                                                        <input type="text" placeholder=""
+                                                            class="form-control input-step-2" id="Productname"
+                                                            formControlName="Product_name" name="Product_name">
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div id="radio" >
+                                                        <label for="casting"> Casting Type: </label>
+                                                        <input type="radio" formControlName="Casting" value="rough"> Rough
+                                                        <input type="radio" formControlName="Casting" value="Machinary"> Machinary
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-holder">
+                                                        <label for="vendor-name">Vendor Name</label>
+                                                        <input type="text" placeholder=""
+                                                            class="form-control input-step-2" id="vendor-name"
+                                                            formControlName="vendor_name" name="vendor_name">
+                                                        <span><i class="zmdi zmdi-search"></i></span>
+                                                    </div>
+                                                    <div id="radio" >
+                                                        <label for="pattern"> pattern Scope </label>
+                                                        <input type="radio" formControlName="pattern_Scope" value=" BFC"> BFC
+                                                        <input type="radio" formControlName="pattern_Scope" value="Customer">
+                                                        Customer
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-holder">
+                                                        <label for="painting">Painting</label>
+                                                        <input type="text" name="painting" class="form-control"
+                                                        formControlName="painting" id="painting" placeholder="">
+                                                    </div>
+                                                    <div class="form-holder">
+                                                        <label for="packing">Packing</label>
+                                                        <input type="text" name="packing" class="form-control"
+                                                        formControlName="packing" id="packing" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div id="radio" >
+                                                        <label for="transport"> Transport: </label>
+                                                        <input type="radio" formControlName="Transport" value="BFC"> BFC
+                                                        <input type="radio" formControlName="Transport" value="Customer"> Customer
+                                                    </div>
+                                                    <div id="radio" >
+                                                        <label for="payment"> Payment terms: </label>
+                                                        <input type="radio" formControlName="payment" value="immediate"> Immediate
+                                                        <input type="radio" formControlName="payment" value="days"> Days
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div id="radio" >
+                                                        <label for="export"> Export Required: </label>
+                                                        <input type="radio"  formControlName="export" value="yes"> Yes
+                                                        <input type="radio"  formControlName="export" value="no"> No
+                                                    </div>
+                                                    <div id="radio" >
+                                                        <label for="quantity"> Quantity: </label>
+                                                        <input type="radio" formControlName="Quantity" value="annually"> Annually
+                                                        <input type="radio" formControlName="Quantity" value="others"> Others
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div-->
+                                    <div role="tabpanel" class="tab-pane fade" id="about">
+                                        <!-- SECTION 3 -->
+                                        <h2>
+                                            <span class="step-icon"><i class="zmdi zmdi-check"></i></span>
+                                            <span class="step-text">Confirm Details</span>
+                                        </h2>
+                                        <section>
+                                            <div class="inner">
+                                                <h3>Comfirm Details</h3>
+                                                <div class="form-row table-responsive">
+                                                    <table class="table">
+                                                        <tbody>
+                                                            <tr class="space-row">
+                                                                <th>Full Name:</th>
+                                                                <td id="fullname-val"></td>
+                                                            </tr>
+                                                            <tr class="space-row">
+                                                                <th>Email Address:</th>
+                                                                <td id="email-val"></td>
+                                                            </tr>
+                                                            <tr class="space-row">
+                                                                <th>Phone Number:</th>
+                                                                <td id="phone-val"></td>
+                                                            </tr>
+                                                            <tr class="space-row">
+                                                                <th>Address Location:</th>
+                                                                <td id="address-val"></td>
+                                                            </tr>
+                                                            <tr class="space-row">
+                                                                <th>Gender:</th>
+                                                                <td id="gender-val"></td>
+                                                            </tr>
+                                                            <tr class="space-row">
+                                                                <th>Account Name:</th>
+                                                                <td id="account-name-val"></td>
+                                                            </tr>
+                                                            <tr class="space-row">
+                                                                <th>Account Number:</th>
+                                                                <td id="account-number-val"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="form-submit">
+                            <input type="submit" value="Submit" (click) ="submit()">
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

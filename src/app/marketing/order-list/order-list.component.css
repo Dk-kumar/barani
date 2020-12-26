@@ -1,0 +1,71 @@
+.container{
+    height: 50vh;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-family: "montserrat";
+    margin-bottom: 70px;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.search-field{
+    height: 50px;
+    width: 400px;
+    padding: 10px;
+    border-radius: 25px;
+    border-color: #3498db;
+}
+.search-btn,.view-btn,.edit-btn{
+    border: 1px solid #3498db;
+    background: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+.search-btn,.view-btn,.edit-btn{
+    color: #3498db;
+  }
+  .search-btn::before{
+    top: 0;
+    border-radius: 0 0 50% 50%;
+  }
+.view-btn::before{
+    top: 0;
+    border-radius: 0 0 50% 50%;
+  }
+  .edit-btn::before{
+    top: 0;
+    border-radius: 0 0 50% 50%;
+  }
+
+
+.btn{
+    border: 1px solid #3498db;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+
+  .btn1{
+    color: #3498db;
+    margin-left: 40%;
+  }
+  .btn1::before{
+    top: 0;
+    border-radius: 0 0 50% 50%;
+  }
